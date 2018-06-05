@@ -411,7 +411,7 @@ static NSArray *NewFieldsArrayForHasIndex(int hasIndex,
 }
 
 - (NSString *)name {
-  return @(name_);
+  return (NSString * _Nonnull)@(name_);
 }
 
 - (GPBFieldDescriptor *)fieldWithNumber:(uint32_t)fieldNumber {
@@ -581,7 +581,7 @@ uint32_t GPBFieldAlternateTag(GPBFieldDescriptor *self) {
 }
 
 - (NSString *)name {
-  return @(description_->name);
+  return (NSString * _Nonnull)@(description_->name);
 }
 
 - (BOOL)isRequired {
@@ -996,7 +996,7 @@ uint32_t GPBFieldAlternateTag(GPBFieldDescriptor *self) {
 }
 
 - (NSString *)singletonName {
-  return @(description_->singletonName);
+  return (NSString * _Nonnull)@(description_->singletonName);
 }
 
 - (const char *)singletonNameC {
